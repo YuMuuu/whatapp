@@ -6,6 +6,6 @@
       "-config",
       "src/main/tlaplus/models/Model_1/MC.cfg",
       "-metadir",
-      "target/states/"
+      "target/tlaplus/states/"
     ).toArray)
 
