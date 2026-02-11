@@ -4,7 +4,6 @@ import java.nio.file.Paths
   println("runnning tlaplus2....")
   tlc2.TLC.main(
     List(
-//      "-debug",
       "-config",
       "src/main/tlaplus/models/Model_1/MC.cfg",
       "-metadir",
