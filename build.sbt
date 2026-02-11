@@ -5,8 +5,10 @@ lazy val root = project
   .settings(
     name := "whatapp",
     version := "0.1.0-SNAPSHOT",
-
     scalaVersion := scala3Version,
+    libraryDependencies +=
+      ("org.lamport" % "tla2tools" % "1.8.0")
+        .intransitive()
+        .from("https://github.com/tlaplus/tlaplus/releases/download/v1.8.0/tla2tools.jar")
 
-    libraryDependencies += "org.scalameta" %% "munit" % "1.0.0" % Test
   )
